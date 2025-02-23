@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Name Generator</title>
+    <style>
+        body {
+            color: white;
+            background-image:url("image/back.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            padding: 10px;
+            width: 100%;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        .items {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .items:hover {
+            color: rgb(220, 185, 185);
+        }
+        .Generatenow {
+            color: orange;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        .Generatenow:hover {
+            color: white;
+        }
+        .logoimg {
+            width: 150px;
+            height: auto;
+        }
+        .content {
+            padding: 100px 20px 50px;
+            text-align: center;
+        }
+        h1 {
+            color: orange;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        .Generatebtn {
+            background-color: orange;
+            border-radius: 5px;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+        }
+        .Generatebtn:hover {
+            background-color: rgb(187, 127, 15);
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            position: relative;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .items, .Generatenow {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content p {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="homepage.html" class="logo"><img src="image/logo.png" class="logoimg"></a>
+        </div>
+        <nav>
+            <a href="homepage.html" class="items">Home</a>
+            <a href="#howtouse" class="items">How it works</a>
+            <a href="#aboutus" class="items">About us</a>
+            <a href="#contactus" class="items">Contact us</a>
+            <a href="generate.php" class="Generatenow">Generate Now</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>Welcome To Business Name Generator</h1>
+        <p>Struggling to find the perfect name for your business? Our AI-powered tool generates creative, catchy, and unique business names in seconds.</p>
+        <button class="Generatebtn" onclick="window.location.href='generate.php'">Generate Now</button>
+
+    </div>
+    <div class="content" id="howtouse">
+        <h1>How to Use</h1>
+        <p>Simply enter keywords that describe your business, industry, or values, and our generator will provide you with a list of potential business names to choose from.</p>
+    </div>
+    <div class="content" id="aboutus">
+        <h1>About Us</h1>
+        <p>We are dedicated to helping entrepreneurs and startups find the perfect name for their business. Our advanced algorithm ensures uniqueness and brandability.</p>
+    </div>
+    <div class="content" id="contactus">
+        <h1>Contact Us</h1>
+        <p>Have questions or need assistance? Reach out to us at support@businessnamegenerator.com or follow us on social media for updates and tips.</p>
+    </div>
+    <footer>
+        <hr>
+        Copyright 2025 | GeekCamp
+    </footer>
+</body>
+</html>
